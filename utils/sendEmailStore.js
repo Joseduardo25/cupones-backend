@@ -15,8 +15,8 @@ export const sendEmailToStore = (data) => {
     Messages: [
       {
         From: {
-          Email: "jocdwardo25@gmail.com",
-          Name: "Tienda de eduardo",
+          Email: "omar.arias@credivargas.pe",
+          Name: "Tienda CrediVargas",
         },
         To: [
           {
