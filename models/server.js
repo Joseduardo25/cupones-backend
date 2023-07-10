@@ -9,7 +9,7 @@ export class Server {
   // es la funcion que se invoca cuando la clase es instanciada
   constructor() {
     this.app = express();
-    this.PORT = process.env.PORT || 5051;
+    this.PORT = process.env.PORT || 5050;
     this.paths = {
       ping: "/api/v1/ping",
       cupon: "/api/v1/cupon",
