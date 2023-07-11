@@ -14,6 +14,14 @@ const CouponSchema = Schema({
   timestamps: true
 });
 
+CouponSchema.methods.toJSON = function () {
+  const { _id: id, code, valid, ...rest } = this.toObject()
+  return {
+    id,
+    code,
+    valid,
+  }
+};
 
 const Coupon = model("Coupon", CouponSchema);
 
